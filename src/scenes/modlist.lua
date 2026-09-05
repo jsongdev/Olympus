@@ -338,6 +338,7 @@ local function handleModEnabledStateChange(mod, enabling)
     updateLabelTextForDependencies(mod)
     updateWarningButtonForMod(mod)
     updateWarningButtonForDependents(mod)
+    refreshVisibleMods()
 end
 
 -- enable mods on the UI
