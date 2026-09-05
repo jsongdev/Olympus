@@ -143,7 +143,7 @@ local function refreshVisibleMods()
             and
             -- only show leaf mods
             (not scene.onlyShowLeafMods
-                or not next(scene.modDependents[mod.info.Name]))
+                or not next(scene.modDependents[mod.info.Name] or {}))
             and
             -- search terms
             (scene.search == ""
